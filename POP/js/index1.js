@@ -45,19 +45,6 @@ $(function () {
 
 
 
-
-
-
 })
 
-//function for play button
-function playGame(){
 
-    var val = document.getElementById('name').value;
-    var regExp = / [0-9]* /;
-    var regExp2 = /[ ]*/;
-
-    if(val == "" || val == regExp || val == regExp2){
-        alert("Kindly Enter Valid Name");
-    }
-}

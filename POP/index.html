@@ -11,6 +11,10 @@ body { margin: 0; padding: 0; background: #000;}
 canvas { display: block; margin: 0 auto; background: #fff; }
 </style>
 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>    
+    
 </head>
 
 <body>
@@ -26,6 +30,7 @@ pop.update is the function where all the things happen. Make sure that function 
 // This link below has nailed the requestAnimeFrame!     
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating
 // shim layer with setTimeout fallback
+// For animation   http://jsfiddle.net/DZ8Qv/19/
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       || 
           window.webkitRequestAnimationFrame || 
@@ -69,6 +74,7 @@ var POP = {
     ua:  null,
     android: null,
     ios:  null,
+    currentLevel:1,
 
     init: function() {
    
@@ -193,7 +199,7 @@ var POP = {
             // put a new instance of bubble into our entities array
             POP.entities.push(new POP.Bubble());
             // reset the counter with a random value
-            POP.nextBubble = ( Math.random() * 100 ) + 100;
+            POP.nextBubble = ( Math.random() * 1 ) + 100;
         }
 
         // spawn a new instance of Touch
@@ -284,6 +290,19 @@ var POP = {
         POP.Draw.text('Hit: ' + POP.score.hit, 20, 30, 14, '#fff');
         POP.Draw.text('Escaped: ' + POP.score.escaped, 20, 50, 14, '#fff');
         POP.Draw.text('Accuracy: ' + POP.score.accuracy + '%', 20, 70, 14, '#fff');
+        
+        /*
+        This is only for test. Harsha bhat
+        
+        */
+        if (POP.score.hit==5)
+        {
+            POP.currentLevel+=1;
+            alert("Congrats! Next level now!!!"+POP.currentLevel);
+            POP.score.hit =0;
+            POP.loop();
+            
+        }
 
     },
 
@@ -294,7 +313,7 @@ var POP = {
     // and render
     loop: function() {
 
-        requestAnimFrame( POP.loop );
+        requestAnimFrame( POP.loop);
 
         POP.update();
         POP.render();
@@ -446,16 +465,21 @@ POP.Bubble = function() {
     Make it dynamic and modular.
     
     */
+    spd=POP.Level[POP.currentLevel].spd;
+    wave = POP.Level[POP.currentLevel].wave;
+    sine = POP.Level[POP.currentLevel].sine;
+    
+    
     this.type = 'bubble';
     this.r = (Math.random() * 20) + 10;
-    this.speed = (Math.random() * 3) + 1;
+    this.speed = (Math.random() * spd) + 1;
  
     this.x = (Math.random() * (POP.WIDTH) - this.r);
-    this.y = POP.HEIGHT + (Math.random() * 100) + 100;
+    this.y = POP.HEIGHT + (Math.random() * 10) + 100;
 
     // the amount by which the bubble
     // will move from side to side
-    this.waveSize = 5 + this.r;
+    this.waveSize = wave + this.r;
     // we need to remember the original
     // x position for our sine wave calculation
     this.xConstant = this.x;
@@ -470,7 +494,7 @@ POP.Bubble = function() {
 
         this.y -= this.speed;
         // the x coord to follow a sine wave
-        this.x = this.waveSize * Math.sin(time) + this.xConstant;
+        this.x = this.waveSize* Math.sin(time) + this.xConstant;
 
         // if offscreen flag for removal
         if (this.y < -10) {
@@ -536,6 +560,23 @@ POP.Particle = function(x, y,r, col) {
     };
 
 };
+POP.Level = {
+    
+                    1:{spd:1,wave:1,sine:1},
+                    2:{spd:1,wave:2,sine:1.5},
+                    3:{spd:1,wave:5,sine:2},
+                    4:{spd:2,wave:7,sine:2.5},
+                    5:{spd:2,wave:12,sine:3},
+                    6:{spd:2,wave:14,sine:3.5},
+                    7:{spd:3,wave:15,sine:4},
+                    8:{spd:3,wave:17,sine:4},
+                    9:{spd:3,wave:19,sine:1},
+                    10:{spd:3,wave:20,sine:1},
+                    11:{spd:4,wave:20,sine:1},
+                    12:{spd:4,wave:22,sine:1},
+                    13:{spd:4,wave:23,sine:1}
+                 
+   };
 
 window.addEventListener('load', POP.init, false);
 window.addEventListener('resize', POP.resize, false);
