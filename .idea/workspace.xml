@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e57d446-967f-4bf6-932d-e2cefabe9024" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POP/html/play.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -11,6 +12,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/POP/js/index1.js" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/POP/html/achievements.html" afterPath="$PROJECT_DIR$/POP/html/landing.html" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/POP/html/items.html" afterPath="$PROJECT_DIR$/POP/html/continue.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/POP/css/index1.css" afterPath="$PROJECT_DIR$/POP/css/index1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/POP/html/index1.html" afterPath="$PROJECT_DIR$/POP/html/index1.html" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     </list>
     <ignored path="harshabhat86.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +38,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="index1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/POP/html/index1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.3505843" vertical-offset="0" max-vertical-offset="599">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+      <file leaf-file-name="index1.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/POP/js/index1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46721312" vertical-offset="0" max-vertical-offset="825">
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POP/html/index1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="510">
+              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/POP/css/index1.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1785">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
               <folding />
             </state>
           </provider>
@@ -66,15 +101,27 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/POP/css/items.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/POP/html/index1.html" />
         <option value="$PROJECT_DIR$/POP/css/index1.css" />
         <option value="$PROJECT_DIR$/POP/js/index1.js" />
+=======
+        <option value="$PROJECT_DIR$/POP/js/index1.js" />
+        <option value="$PROJECT_DIR$/POP/html/index1.html" />
+        <option value="$PROJECT_DIR$/POP/css/index1.css" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="y" value="22" />
     <option name="width" value="1280" />
+=======
+    <option name="x" value="-13" />
+    <option name="y" value="22" />
+    <option name="width" value="1201" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     <option name="height" value="720" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -107,6 +154,7 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="vandanabhat.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
@@ -118,22 +166,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vandanabhat.github.io" />
+=======
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POP" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="vandanabhat.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vandanabhat.github.io" />
+=======
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="POP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -142,6 +226,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vandanabhat.github.io" />
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animating float labels using jQuery and CSS3_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -153,6 +309,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harshabhat86.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -171,6 +348,7 @@
     </key>
   </component>
   <component name="RunManager">
+<<<<<<< HEAD
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -179,6 +357,8 @@
       <option name="testName" />
       <method />
     </configuration>
+=======
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -189,6 +369,7 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
       <option name="cucumberJsArguments" />
       <option name="executablePath" />
@@ -197,6 +378,14 @@
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
+=======
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -206,6 +395,19 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -232,14 +434,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="22" width="1280" height="720" extended-state="6" />
+=======
+    <frame x="-13" y="22" width="1201" height="720" extended-state="0" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26640624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26644462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -277,10 +487,25 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/POP/html/index1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="525">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/POP/html/items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POP/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="8295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
           <folding />
         </state>
       </provider>
@@ -289,6 +514,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
         </state>
       </provider>
     </entry>
@@ -296,6 +525,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POP/css/items.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
         </state>
       </provider>
     </entry>
@@ -319,10 +560,33 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/POP/html/items.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POP/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="8295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
         </state>
       </provider>
     </entry>
@@ -330,17 +594,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POP/css/items.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/POP/css/index1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1785">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/POP/html/index1.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.3505843" vertical-offset="0" max-vertical-offset="599">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="510">
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/POP/js/index1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46721312" vertical-offset="0" max-vertical-offset="825">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 5d6e0335f408fcb68d997833c89f883799df9802
   </component>
 </project>
 
