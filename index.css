@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    /*font-family: "Proxima Nova", helvetica, verdana, arial, sans-serif;*/
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+body{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+div{
+    padding-top: 25px;
+}
+.me{
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+.margin_l{
+    margin-left: 165px;
+}
+.main{
+    margin: 7%;
+    padding: 35px 70px 35px 70px;
+    border-radius: 3px;
+    background-image: url("images/background.png");
+    position: relative;
+
+}
+.headings{
+    float: left;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 14;
+    font-style: normal;
+}
+.recentWorkImages{
+    padding: 30px;
+    margin-left: 140px;
+}
+.project_image{
+    width: 200px;
+    height: 200px;
+    padding: 0 20px 20px 0;
+}
+.padding_r{
+    padding-right: 40px;
+}
+.padding_l{
+    padding-left: 35px;
+}
+.padding_t{
+    padding-top: 20px;
+}
+table{
+    padding-bottom: 30px;
+}
