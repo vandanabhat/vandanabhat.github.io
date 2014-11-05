@@ -157,7 +157,7 @@ body{
 }
 .services-div1{
     margin: 8% auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 .services-img{
     float: right;
