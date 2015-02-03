@@ -1,67 +1,89 @@
 *{
-    padding: 0;
-    /*font-family: "Proxima Nova", helvetica, verdana, arial, sans-serif;*/
-    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
-    font-weight: 300;
-    font-size: 20px;
+    background: #f0f0f0;
+    color: #060605;
+    margin: 0;
+}
+html, body,#home-div, #recent-wrok, #blog, #contact{
+    width:100%;
+    height:100%;
 
 }
-body{
-    background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #131313;
-    background-size: 20px 20px;
+.home-div{
+    background-image: url('images/bay_bridgeBW.jpg');
+    background-size: 100% auto;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    position: relative;
+    top: 0;left: 0;
+    padding: 0;
 }
-div{
-    padding-top: 25px;
-}
-.me{
+.menu{
+    position: fixed;
+    width: 40%;
+    height: 6%;
+    padding-top: 1%;
+    margin-left: 30%;
     text-align: center;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+    font-size: 20px;
+    font-weight: 400;
+    background: #4c4c54;
+    opacity: 0.5;
+}
+
+.menu-link {
+    /*position: fixed;*/
+    padding-left:  30px;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #00f7f7;
+    background: transparent;
+    opacity: 1;
+    z-index: 1;
+
+}
+.background-grey{
+     position: absolute;
+     top: 37%;
+     left: 35%;
+     background: #4c4c54;
+     opacity: 0.5;
+     padding: 6% 16%;
+ }
+
+.name{
+    /*padding: 2% 7% 0 7%;*/
+    background: transparent;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    color: #00c7c7;
+    font-family: Copperplate,"Copperplate Gothic Light",fantasy;
     font-size: 30px;
     font-weight: 400;
-    font-style: normal;
-}
-.margin_l{
-    margin-left: 165px;
-}
-.main{
-    margin: 7%;
-    padding: 35px 70px 35px 70px;
-    border-radius: 3px;
-    background-image: url("images/background.png");
-    position: relative;
+    opacity: 1;
 
 }
-.headings{
-    float: left;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 14;
-    font-style: normal;
+.line{
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    right: 39%;
 }
-.recentWorkImages{
-    padding: 30px;
-    margin-left: 140px;
+.web-developer{
+    position: absolute;
+    top: 52%;
+    left: 45.5%;
+    background: transparent;
+    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 100;
+    color: #00C7C3;
+    opacity: 1;
+    z-index: 100;
 }
-.project_image{
-    width: 200px;
-    height: 200px;
-    padding: 0 20px 20px 0;
-}
-.padding_r{
-    padding-right: 40px;
-}
-.padding_l{
-    padding-left: 35px;
-}
-.padding_t{
-    padding-top: 20px;
-}
-table{
-    padding-bottom: 30px;
+#down:before{
+    content: U+2228;
 }
