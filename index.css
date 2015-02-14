@@ -1,5 +1,5 @@
 *{
-    background: #f0f0f0;
+    /*background: #f0f0f0;*/
     color: #060605;
     margin: 0;
 }
@@ -33,14 +33,23 @@ html, body,#home-div, #recent-wrok, #blog, #contact{
 
 .menu-link {
     /*position: fixed;*/
-    padding-left:  30px;
-    padding-right: 30px;
+    /*padding-left:  30px;*/
+    /*padding-right: 30px;*/
+    padding: 3% 6.5% 3.5% 6.4%;
     text-decoration: none;
     color: #00f7f7;
     background: transparent;
     opacity: 1;
     z-index: 1;
 
+}
+.menu-link:hover{
+    background: #00f7f7;
+    color: #4c4c54;
+}
+.menu-link:active:focus{
+    background: #00f7f7;
+    color: #4c4c54;
 }
 .background-grey{
      position: absolute;
@@ -84,6 +93,99 @@ html, body,#home-div, #recent-wrok, #blog, #contact{
     opacity: 1;
     z-index: 100;
 }
-#down:before{
-    content: U+2228;
+.down-arrow{
+    -ms-transform: rotate(-135deg); /* IE 9 */
+    -webkit-transform: rotate(-135deg); /* Chrome, Safari, Opera */
+    transform: rotate(-135deg);
+    background: transparent;
+    padding: 6px 6px;
+    position: absolute;
+    left: 50%;top: 95%;
+    border-left: 4px solid #00C7C3;
+    border-top: 4px solid #00C7C3;
 }
+#contact{
+    background: #4c4c54;
+}
+.contactP{
+    background: transparent;
+    text-align: center;
+    padding-top: 10%;
+    /*text-transform: uppercase;*/
+    /*font-family: "latienne-pro","chaparral-pro",serif;*/
+    font-family: "Helvetica Neue", Helvetica , Arial, sans-serif;
+    font-weight:300;
+    font-size: 40px;
+    color: rgba(240, 240, 240, 0.85);
+    letter-spacing: 0rem;
+    word-spacing:0.015rem;
+}
+.work-P{
+    background: transparent;
+    text-align: center;
+    padding-top: 20%;
+    font-family: "Helvetica Neue", Helvetica , Arial, sans-serif;
+    font-weight:300;
+    font-size: 30px;
+    color: rgba(76, 76, 84, 0.85);
+    letter-spacing: 0rem;
+    word-spacing:0.015rem;
+}
+.work-P a{
+    text-decoration: none;
+}
+.contact-line{
+    width: 60%;
+    margin-left: 20%;
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-ul {
+    /*display: inline-block;*/
+    margin-left: 31%;
+    list-style-type: none;
+}
+.contact-email{
+    padding: 20px;
+    width: 30%;
+}
+.contact-email a{
+    position: absolute;
+    color: rgba(240, 240, 240, 0.85);
+    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-weight:100;
+    font-size: 16px;
+    margin-left: 2%;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    /*height: 4%;*/
+    /*letter-spacing: 0rem;*/
+    /*word-spacing:0.015rem;*/
+}
+
+.icon-mail{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url("images/email-512px.svg") no-repeat;
+    background-size: 24px 24px;
+}
+.icon-git{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url("images/github-squared-512px-2.svg") no-repeat;
+    background-size: 24px 24px;
+}
+.icon_lin{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url("images/linkedin-rect-512px.svg") no-repeat;
+    background-size: 24px 24px;
+}
+
