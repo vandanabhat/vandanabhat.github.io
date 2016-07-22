@@ -16,38 +16,38 @@ angular.module('autoSales').controller('homeController',[ '$scope',
     $scope.carDetails = [
         {   name:"Honda Cars and SUVs",
             info:"Explore hundreds of our storied creations in this 360° immersive experience. Get the most from your car and enjoy special benefits",
-            imageurl1:"../app/images/honda1.jpeg",
-            imageurl2:"../app/images/honda2.jpeg",
+            imageurl1:"images/honda1.jpeg",
+            imageurl2:"images/honda2.jpeg",
             dataContent1:"Honda Civic",
             dataContent2:"Honda CR-V"
         },
         {
             name:"Audi Cars and SUVs",
             info:"Explore hundreds of our storied creations in this 360° immersive experience. Get the most from your car and enjoy special benefits",
-            imageurl1:"../app/images/audi1.jpg",
-            imageurl2:"../app/images/audi2.jpg",
+            imageurl1:"images/audi1.jpg",
+            imageurl2:"images/audi2.jpg",
             dataContent1:"Audi R8",
             dataContent2:"Audi Q5"
         },
         {
             name:"Ford Cars, Trucks, and SUVs",
             info:"Explore hundreds of our storied creations in this 360° immersive experience. Get the most from your car and enjoy special benefits",
-            imageurl1:"../app/images/ford1.jpeg",
-            imageurl2:"../app/images/ford2.jpg",
+            imageurl1:"images/ford1.jpeg",
+            imageurl2:"images/ford2.jpg",
             dataContent1:"Ford Fiesta",
             dataContent2:"Ford SUV"
         },
         {   name:"Chevy Cars, Trucks, and SUVs",
             info:"Explore hundreds of our storied creations in this 360° immersive experience. Get the most from your car and enjoy special benefits",
-            imageurl1:"../app/images/chevy1.jpg",
-            imageurl2:"../app/images/chevy2.jpg",
+            imageurl1:"images/chevy1.jpg",
+            imageurl2:"images/chevy2.jpg",
             dataContent1:"Chevy Cruze",
             dataContent2:"Chevy Malibu"
         },
         {   name:"BMW Cars and SUVs",
             info:"Explore hundreds of our storied creations in this 360° immersive experience. Get the most from your car and enjoy special benefits",
-            imageurl1:"../app/images/bmw1.jpg",
-            imageurl2:"../app/images/bmw2.jpg",
+            imageurl1:"images/bmw1.jpg",
+            imageurl2:"images/bmw2.jpg",
             dataContent1:"BMW 320i",
             dataContent2:"BMW X5"
         }
