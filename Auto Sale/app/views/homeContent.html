@@ -1,0 +1,48 @@
+<div class="content" ng-controller="homeController">
+    <div class="contentHeader">
+        <div class="contentHeaderImage" style="background: url('../app/images/car2.jpg') center no-repeat;background-size: cover;">
+            <section>
+                <h2 class="">{{car.punchLine}}</h2>
+                <button class="btn btn-success btn-group-lg">GetStarted Now</button>
+            </section>
+        </div>
+        <div class="selection">
+            <select name="make" ng-model="selectedCar.make" class="dropdown">
+                <option value="" class="dropdown-item">Make</option>
+                <option ng-repeat="option in car.make" value="{{option}}" class="dropdown-item">{{option}}</option>
+            </select>
+            <select name="model"  ng-model="selectedCar.model" class="dropdown" ng-diabled="!selectedCar.make">
+                <option value="" class="dropdown-item">Model</option>
+                <option ng-repeat="option in carMake[selectedCar.make]" value="{{option.id}}" class="dropdown-item">{{option.name}}</option>
+            </select>
+            <select name="price"  ng-model="selectedCar.price" class="dropdown">
+                <option value="" class="dropdown-item">Price</option>
+                <option ng-repeat="option in car.price" value="{{option}}" class="dropdown-item">{{option}}</option>
+            </select>
+            <button class="btn btn-group-lg findCarButton">Find My dream Car</button>
+        </div>
+    </div>
+    <div class="contentBody">
+        <ul>
+            <li ng-repeat="car in carDetails">
+                <div class="row carDetailContainer">
+                    <div class="col-xs-1 carInfo">
+                        <h3>{{car.name}}</h3>
+                        <p>{{car.info}}</p>
+                        <button class="btn btn-success btn-group-sm">View All</button>
+                    </div>
+                    <div class="col-xs-1 carImage row">
+                        <div data-content={{car.dataContent1}} class="col-xs-6 image" style="background-image: url('{{car.imageurl1}}')">
+                            <span class="learnMore"></span>
+                        </div>
+                       <div data-content={{car.dataContent2}} class="col-xs-6 image" style="background-image: url('{{car.imageurl2}}')">
+                           <span class="learnMore"></span>
+                       </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</div>

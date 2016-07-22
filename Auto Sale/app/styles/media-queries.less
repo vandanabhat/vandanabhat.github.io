@@ -1,0 +1,98 @@
+@media (max-width: 766px) {
+.wrapper {
+  nav.panel {
+    span.search {
+      //display: none;
+      button {
+        float: none !important;
+      }
+    }
+    .navbar-collapse.collapse {
+      background: #2c3e50;
+      width: 40%;
+      margin-left: 55%;
+      margin-top: -2%;
+      ul {
+        li a {
+          background: #2c3e50;
+          z-index: 101;
+          padding-top: 18px;
+          padding-bottom: 18px;
+        }
+      }
+    }
+    div.searchDiv{
+      width: 50% ;
+      margin-left: 21% ;
+    }
+    #nav-menu {
+      clear: both !important;
+    }
+  }
+
+  .content {
+    .contentHeader {
+      section {
+        h2 {
+          width: 100% !important;
+        }
+      }
+      .selection {
+        display: none;
+      }
+    }
+    .contentBody {
+      .carImage {
+        > div {
+          margin-right: 1%;
+        }
+        div {
+
+        }
+      }
+    }
+  }
+}
+}
+@media (min-width: 767px) and (max-width: 960px) {
+  .content {
+    .contentHeader {
+      section {
+        h2 {
+        }
+      }
+      .selection {
+        //display: none;
+      }
+    }
+    .contentBody {
+      .carImage {
+        >div{
+          margin-right: 1%;
+        }
+        div.image {
+          //width: 30% !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1450px){
+  .contentHeader{
+    section{
+    }
+  .selection{
+    }
+  }
+  .contentBody{
+    .carDetailContainer{
+      max-width: 66%;
+      margin: 0px 22% !important;
+    }
+  }
+  .contentHeader section,.selection{
+    max-width: 66%;
+    margin: 0px 22.5% !important;
+  }
+}

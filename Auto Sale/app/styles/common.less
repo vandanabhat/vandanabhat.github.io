@@ -1,0 +1,38 @@
+@import 'media-queries';
+
+@header-height : 40px;
+@footer-height: 60px;
+
+html, body, .wrapper{
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+
+  .header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:@header-height;
+    right:0px;
+    margin-bottom: 0;
+    .icon-bar{
+      background: #000000;
+    }
+  }
+  .content{
+    position:absolute;
+    top:@header-height;
+    bottom:@footer-height;
+    left:0px;
+    right:0px;
+    overflow:auto;
+  }
+  .footer{
+    position:absolute;
+    bottom:0px;
+    height:@footer-height;
+    left:0px;
+    right:0px;
+    margin-bottom: 0;
+  }
+}
