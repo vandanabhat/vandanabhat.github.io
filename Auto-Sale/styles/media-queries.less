@@ -2,7 +2,6 @@
 .wrapper {
   nav.panel {
     span.search {
-      //display: none;
       button {
         float: none !important;
       }
@@ -22,8 +21,11 @@
       }
     }
     div.searchDiv{
-      width: 50% ;
-      margin-left: 21% ;
+      width: 32%;
+      top: -34px;
+      margin-left: 23%;
+      padding: 0;
+      z-index: 10;
     }
     #nav-menu {
       clear: both !important;
@@ -38,15 +40,21 @@
         }
       }
       .selection {
-        display: none;
+        .findCarButton{
+          font-size: 11px;
+        }
+        //display: none;
       }
     }
     .contentBody {
       .carImage {
         > div {
-          margin-right: 1%;
+          //margin-right: 1%;
+          margin-bottom: 2%;
         }
-        div {
+        div.image, span.learnMore {
+          width: 150px !important;
+          height: 120px !important;
 
         }
       }
@@ -94,5 +102,71 @@
   .contentHeader section,.selection{
     max-width: 66%;
     margin: 0px 22.5% !important;
+  }
+}
+
+@media (max-height: 650px) {
+  //#wrapper {
+    .contentHeader {
+      .contentHeaderImage section {
+        top: 0 !important;
+        h2 {
+          font-size: 20px;
+        }
+      }
+      #selectCar {
+        .findCarButton {
+          padding: 0 12px;
+          font-size: 9px;
+        }
+        .dropdown {
+          height: auto;
+        }
+      }
+    }
+  //}
+}
+
+@media (max-height: 750px) and (max-width: 414px) {
+  #wrapper {
+    .searchDiv{
+      width: 33%;
+      top: -34px;
+      margin-left: 40%;
+      input[type=search]{
+        width: 75%;
+      }
+    }
+    .content #contentHeaderId {
+      .contentHeaderImage {
+        height: 100%;
+      }
+      #selectCar {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    #contentBodyId {
+      .carDetailContainer {
+        .carInfo, .carImage {
+          clear: both;
+          width: 100%;
+        }
+        div.image, span.learnMore {
+          width: 120px !important;
+          height: 110px !important;
+          margin-top: 3%;
+        }
+      }
+    }
+    .footer {
+      .logo {
+        display: none;
+      }
+      .footerCopyright {
+        float: none;
+        text-align: center;
+      }
+    }
   }
 }

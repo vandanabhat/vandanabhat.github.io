@@ -42,8 +42,8 @@
 .wrapper nav.panel .searchDiv {
   position: relative;
   top: 8px;
-  width: 20%;
-  margin-left: 80%;
+  width: 23%;
+  margin-left: 76.5%;
   background: #2c3e50;
   padding: 1%;
   z-index: 200;
@@ -52,6 +52,7 @@
   width: 85%;
   background: #2c3e50;
   border: 1px solid #ffffff;
+  border-radius: 14px;
 }
 .wrapper nav.panel .searchDiv button {
   background: none;

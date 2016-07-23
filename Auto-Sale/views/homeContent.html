@@ -1,12 +1,12 @@
 <div class="content" ng-controller="homeController">
-    <div class="contentHeader">
-        <div class="contentHeaderImage" style="background: url('images/car2.jpg') center no-repeat;background-size: cover;">
+    <div class="contentHeader" id="contentHeaderId">
+        <div class="contentHeaderImage" style="background: url('images/car6.jpg') top no-repeat;background-size: cover;">
             <section>
                 <h2 class="">{{car.punchLine}}</h2>
                 <button class="btn btn-success btn-group-lg">GetStarted Now</button>
             </section>
         </div>
-        <div class="selection">
+        <div class="selection" id="selectCar">
             <select name="make" ng-model="selectedCar.make" class="dropdown">
                 <option value="" class="dropdown-item">Make</option>
                 <option ng-repeat="option in car.make" value="{{option}}" class="dropdown-item">{{option}}</option>
@@ -22,7 +22,7 @@
             <button class="btn btn-group-lg findCarButton">Find My dream Car</button>
         </div>
     </div>
-    <div class="contentBody">
+    <div class="contentBody" id="contentBodyId">
         <ul>
             <li ng-repeat="car in carDetails">
                 <div class="row carDetailContainer">

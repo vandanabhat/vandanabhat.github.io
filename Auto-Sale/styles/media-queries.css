@@ -15,8 +15,11 @@
     padding-bottom: 18px;
   }
   .wrapper nav.panel div.searchDiv {
-    width: 50% ;
-    margin-left: 21% ;
+    width: 32%;
+    top: -34px;
+    margin-left: 23%;
+    padding: 0;
+    z-index: 10;
   }
   .wrapper nav.panel #nav-menu {
     clear: both !important;
@@ -24,11 +27,16 @@
   .wrapper .content .contentHeader section h2 {
     width: 100% !important;
   }
-  .wrapper .content .contentHeader .selection {
-    display: none;
+  .wrapper .content .contentHeader .selection .findCarButton {
+    font-size: 11px;
   }
   .wrapper .content .contentBody .carImage > div {
-    margin-right: 1%;
+    margin-bottom: 2%;
+  }
+  .wrapper .content .contentBody .carImage div.image,
+  .wrapper .content .contentBody .carImage span.learnMore {
+    width: 150px !important;
+    height: 120px !important;
   }
 }
 @media (min-width: 767px) and (max-width: 960px) {
@@ -45,5 +53,55 @@
   .selection {
     max-width: 66%;
     margin: 0px 22.5% !important;
+  }
+}
+@media (max-height: 650px) {
+  .contentHeader .contentHeaderImage section {
+    top: 0 !important;
+  }
+  .contentHeader .contentHeaderImage section h2 {
+    font-size: 20px;
+  }
+  .contentHeader #selectCar .findCarButton {
+    padding: 0 12px;
+    font-size: 9px;
+  }
+  .contentHeader #selectCar .dropdown {
+    height: auto;
+  }
+}
+@media (max-height: 750px) and (max-width: 414px) {
+  #wrapper .searchDiv {
+    width: 33%;
+    top: -34px;
+    margin-left: 40%;
+  }
+  #wrapper .searchDiv input[type=search] {
+    width: 75%;
+  }
+  #wrapper .content #contentHeaderId .contentHeaderImage {
+    height: 100%;
+  }
+  #wrapper .content #contentHeaderId #selectCar {
+    visibility: hidden;
+    height: 0;
+  }
+  #wrapper #contentBodyId .carDetailContainer .carInfo,
+  #wrapper #contentBodyId .carDetailContainer .carImage {
+    clear: both;
+    width: 100%;
+  }
+  #wrapper #contentBodyId .carDetailContainer div.image,
+  #wrapper #contentBodyId .carDetailContainer span.learnMore {
+    width: 120px !important;
+    height: 110px !important;
+    margin-top: 3%;
+  }
+  #wrapper .footer .logo {
+    display: none;
+  }
+  #wrapper .footer .footerCopyright {
+    float: none;
+    text-align: center;
   }
 }
