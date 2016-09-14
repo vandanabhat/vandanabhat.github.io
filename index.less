@@ -1,0 +1,348 @@
+*{
+  color: #fff;
+  margin: 0;
+}
+body{
+  //overflow: hidden;
+}
+html, body, .home, #recent-work, #contact, #about-me{
+  width:100%;
+  height:100%;
+
+}
+.centerDiv{
+  position: absolute;top:50%;left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#nav-bar-top{
+  -webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.navbar-custom {
+  padding: 10px 0;
+  background: transparent;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 1;
+  z-index: 1000;
+  border-color: transparent;
+  .navbar-right:last-child {
+    margin-right: 5%;
+  }
+  .menu-link {
+    text-decoration: none;
+    opacity: 1;
+    z-index: 1001;
+    outline: 0;
+    color: rgba(298, 255, 255, .8);
+    background-color: transparent;
+    span{
+      color: #fff;
+      &:hover {
+        border-bottom:2px solid #fff;
+      }
+      &:active:focus {
+        border-bottom:2px solid #fff;
+      }
+    }
+  }
+}
+
+.top-nav-collapse{
+  opacity: 1;
+  padding: 0;
+  background: #446CB3;
+  border-color: #e7e7e7;
+}
+
+header.home{
+  background: url('images/pexels-photo.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+
+.home-div {
+  .intro {
+    border-radius: 8px;
+    width: 38%;
+    height: 40%;
+    background: #446CB3;
+    opacity: 0.9;
+    padding:5% 10%;
+  }
+  .intro-desc-wrapper{
+    width: 35%;
+    height: 35%;
+    .display-pic{
+      width: 150px;
+      height: 150px;
+      position: relative;
+      top: -90px;
+      margin: 0 auto;
+      border-radius: 50%;
+      //.connect{
+      //  width: inherit;
+      //  height: inherit;
+      //  border-radius: 50%;
+      //  background: #4c4c54;
+      //  opacity: 0.7;
+      //}
+      .pic{
+        background: url("images/VandanaDP.jpg") no-repeat;
+        background-size: cover;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+      }
+    }
+    .intro-desc {
+      width: 100%;
+      text-align: center;
+      background: transparent;
+      position: absolute;
+      color: #fff;
+      font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      font-size: 18px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+      opacity: 1;
+      .know-me{
+        padding: 8px;
+        border-radius: 5px;
+        background: transparent;
+        border:1px solid #fff;
+        color: #fff;
+        font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+        font-size: 14px;
+        font-style: normal;
+      }
+    }
+    .name{
+      text-align: center;
+      text-transform: none;
+      //font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      margin-top: -74px;
+    }
+    .line {
+      position: absolute;
+      top: 49%;
+      left: 40%;
+      right: 39%;
+    }
+    .web-developer {
+      position: absolute;
+      top: 52%;
+      left: 45.5%;
+      background: transparent;
+      font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      text-transform: lowercase;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: 100;
+      color: #00C7C3;
+      opacity: 1;
+      z-index: 100;
+    }
+  }
+}
+}
+  #recent-work {
+    .work-P {
+      background: transparent;
+      text-align: center;
+      padding-top: 20%;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+      color: rgba(76, 76, 84, 0.85);
+      letter-spacing: 0rem;
+      word-spacing: 0.015rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  #about-me{
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+    position: relative;
+    .background{
+      background: url('images/apple-iphone-books-desk.jpg') no-repeat bottom center scroll #376dac;;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //opacity: .3;
+      width: 100%;
+      height: 100%;
+      .background-overlay{
+        width: inherit;
+        height: inherit;
+        background: rgba(68,108,179, 0.7);
+      }
+    }
+    h3{
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-weight: 400;
+      text-align: center;
+    }
+    .caption{
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+      font-family: Lato, cursive;
+    }
+    .row{
+      padding: 20px 0;
+    }
+    .about-me-desc{
+      font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 19px;
+      box-sizing: border-box;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    .design-skills{
+      figure{
+        text-align: center;
+        p{
+          padding: 10px 5px;
+          font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 17px;
+          box-sizing: border-box;
+          font-weight: 300;
+          line-height: 1.4;
+        }
+      }
+      img{
+        //width: 100%;
+        max-width: 100%;
+        max-height: 214px;
+        margin: 0 auto;
+      }
+    }
+    .skill-chart-div{
+      .skill-chart{
+        padding: 4% 4% 4% 8%;
+      }
+      svg{
+        path{
+          stroke-width:20;
+          -webkit-transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -o-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in;
+        }
+        #js, #angularjs, #jquery, #html, #css, #bootstrap, #creativity{
+          &:hover{
+            stroke-width: 45;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .skills{
+      text-align: center;
+      ul {
+        list-style: none;
+        li{
+          width: 50%;
+          margin: 10px auto;
+          padding: 10px;
+          border-bottom-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+      }
+    }
+  }
+  #contact {
+    background: #4c4c54;
+    .contactP {
+      background: transparent;
+      text-align: center;
+      padding-top: 10%;
+      /*text-transform: uppercase;*/
+      /*font-family: "latienne-pro","chaparral-pro",serif;*/
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: rgba(240, 240, 240, 0.85);
+      letter-spacing: 0rem;
+      word-spacing: 0.015rem;
+    }
+    .contact-line {
+      width: 60%;
+      margin-left: 20%;
+      opacity: 0.5;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .contact-ul {
+      /*display: inline-block;*/
+      margin-left: 31%;
+      list-style-type: none;
+    }
+    .contact-email {
+      padding: 20px;
+      width: 30%;
+      a {
+        position: absolute;
+        color: rgba(240, 240, 240, 0.85);
+        font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        margin-left: 2%;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        /*height: 4%;*/
+        /*letter-spacing: 0rem;*/
+        /*word-spacing:0.015rem;*/
+        .icon-mail {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          background: url("images/email-512px.svg") no-repeat;
+          background-size: 24px 24px;
+        }
+        .icon-git {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          background: url("images/github-squared-512px-2.svg") no-repeat;
+          background-size: 24px 24px;
+        }
+        .icon_lin {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          background: url("images/linkedin-rect-512px.svg") no-repeat;
+          background-size: 24px 24px;
+        }
+
+      }
+
+    }
+  }
+//}

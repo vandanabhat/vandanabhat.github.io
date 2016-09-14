@@ -1,0 +1,38 @@
+.mainContainer{
+  background: url("images/bay_bridgeBW.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.ContentWrapper{
+  position: absolute;
+  top: 80px; bottom: 80px;
+  left: 160px; right: 160px;
+  min-width: 500px; min-height: 300px;
+  z-index: 1;
+}
+.Content{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 1em;
+  z-index: 1;
+}
+.O{
+  position: relative;
+  height: 200px; width: 200px;
+  top: -40px;
+  margin: 0px auto;
+  border-radius: 100%;
+  background: linear-gradient(200deg,#ff8068,#ff5072);
+  z-index: 3;
+}
+.O:after{
+  content:'';
+  position: absolute;
+  left:50px; top:50px;
+  height: 100px; width: 100px;
+  border-radius: 100%;
+  background-color: #fff;
+}
