@@ -1,3 +1,7 @@
+@font-face {
+  font-face-name: optima;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
 * {
   color: #fff;
 }
@@ -112,6 +116,8 @@ header.home .home-div .intro {
   border-radius: 8px;
   width: 38%;
   height: 44%;
+  min-height: 310px;
+  min-width: 310px;
   background: #446CB3;
   opacity: 0.9;
   padding: 5% 10%;
@@ -119,6 +125,8 @@ header.home .home-div .intro {
 header.home .home-div .intro-desc-wrapper {
   width: 35%;
   height: 35%;
+  min-height: 310px;
+  min-width: 310px;
 }
 header.home .home-div .intro-desc-wrapper .display-pic {
   width: 150px;
@@ -143,6 +151,7 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div {
 header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome {
   padding-top: 10px;
   font-size: 20px;
+  font-family: Optima;
 }
 header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome #greeting {
   margin-right: 4px;
@@ -150,10 +159,10 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome #greeti
 header.home .home-div .intro-desc-wrapper .intro-desc-div .name {
   text-align: center;
   text-transform: none;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: optima;
+  font-weight: 400;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
   margin-top: 10px;
 }
 header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc {
@@ -162,13 +171,10 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc {
   background: transparent;
   position: absolute;
   color: #fff;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: optima;
+  padding-top: 10px;
   font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
-  opacity: 1;
+  font-weight: 200;
 }
 header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   margin-top: 10px;
@@ -177,7 +183,7 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-family: optima;
   font-size: 14px;
   font-style: normal;
 }
@@ -323,16 +329,24 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
 }
-#about-me .tools-ul {
-  list-style: none;
+#about-me .tools-table {
+  margin: 0 auto;
 }
-#about-me .tools-ul li {
-  padding: 3% 0;
-  font-size: 15px;
+#about-me .tools-table tr td {
+  padding: 10px 0;
+}
+#about-me .tools-table tr td.tool-heading {
+  text-align: right;
+  font-weight: bold;
+  width: 50%;
+}
+#about-me .tools-table tr td.tool-desc {
+  padding-left: 15px;
+  font-weight: 300;
 }
 #contact {
   width: 100%;
-  height: 80%;
+  height: auto;
   background: #E9D460;
 }
 #contact h2 {
@@ -354,6 +368,9 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   margin: 4% auto;
   color: #376dac;
   overflow-y: scroll;
+}
+#contact .contact-container .contactForm .col-md-4 {
+  padding-top: 10px;
 }
 #contact .contact-container .contactForm .form-group {
   padding: 8px;
@@ -415,6 +432,7 @@ footer {
 }
 footer .stay-connect {
   text-align: center;
+  background: #446CB3;
 }
 footer .stay-connect .icon-mail {
   text-decoration: none;

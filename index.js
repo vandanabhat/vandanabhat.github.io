@@ -115,7 +115,7 @@ $(document).ready(function () {
         }
     });
 
-    var greetArr = ['',"Hello","नमस्ते",'ನಮಸ್ಕಾರ'],
+    var greetArr = ['',"Hello,","नमस्ते,",'ನಮಸ್ಕಾರ,'],
         cursor = $('#cursor'),
         greeting = $('#greeting'),
         counter = 500,
