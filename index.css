@@ -1,12 +1,10 @@
 * {
   color: #fff;
-  margin: 0;
 }
 html,
 body,
 .home,
 #recent-work,
-#contact,
 #about-me {
   width: 100%;
   height: 100%;
@@ -21,6 +19,47 @@ body,
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.show {
+  display: block;
+}
+.heading-font {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-weight: 400;
+}
+.caption {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Lato, cursive;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
 #nav-bar-top {
   -webkit-transition: all 0.7s ease-in;
   -moz-transition: all 0.7s ease-in;
@@ -30,9 +69,7 @@ body,
 .navbar-custom {
   padding: 10px 0;
   background: transparent;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
   font-size: 20px;
-  font-weight: 400;
   opacity: 1;
   z-index: 1000;
   border-color: transparent;
@@ -74,7 +111,7 @@ header.home {
 header.home .home-div .intro {
   border-radius: 8px;
   width: 38%;
-  height: 40%;
+  height: 44%;
   background: #446CB3;
   opacity: 0.9;
   padding: 5% 10%;
@@ -98,7 +135,28 @@ header.home .home-div .intro-desc-wrapper .display-pic .pic {
   height: inherit;
   border-radius: 50%;
 }
-header.home .home-div .intro-desc-wrapper .intro-desc {
+header.home .home-div .intro-desc-wrapper .intro-desc-div {
+  position: relative;
+  top: -90px;
+  text-align: center;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome {
+  padding-top: 10px;
+  font-size: 20px;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome #greeting {
+  margin-right: 4px;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .name {
+  text-align: center;
+  text-transform: none;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc {
   width: 100%;
   text-align: center;
   background: transparent;
@@ -112,7 +170,8 @@ header.home .home-div .intro-desc-wrapper .intro-desc {
   line-height: 20px;
   opacity: 1;
 }
-header.home .home-div .intro-desc-wrapper .intro-desc .know-me {
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
+  margin-top: 10px;
   padding: 8px;
   border-radius: 5px;
   background: transparent;
@@ -122,48 +181,64 @@ header.home .home-div .intro-desc-wrapper .intro-desc .know-me {
   font-size: 14px;
   font-style: normal;
 }
-header.home .home-div .intro-desc-wrapper .name {
+#recent-work {
+  background: #f64747;
+}
+#recent-work .project-container {
   text-align: center;
-  text-transform: none;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  margin-top: -74px;
+  height: 100%;
 }
-header.home .home-div .intro-desc-wrapper .line {
-  position: absolute;
-  top: 49%;
-  left: 40%;
-  right: 39%;
+#recent-work .project-container h2 {
+  padding-top: 60px;
 }
-header.home .home-div .intro-desc-wrapper .web-developer {
-  position: absolute;
-  top: 52%;
-  left: 45.5%;
-  background: transparent;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  text-transform: lowercase;
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 100;
-  color: #00C7C3;
-  opacity: 1;
-  z-index: 100;
+#recent-work .project-container .col-md-4,
+#recent-work .project-container .col-md-6 {
+  padding: 6% 0;
 }
-#recent-work .work-P {
-  background: transparent;
-  text-align: center;
-  padding-top: 20%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  color: rgba(76, 76, 84, 0.85);
-  letter-spacing: 0rem;
-  word-spacing: 0.015rem;
+#recent-work .project-container .row {
+  height: 80%;
+  padding: 5% 0;
 }
-#recent-work .work-P a {
+#recent-work .project-container .col-md-8 {
+  height: 100%;
+}
+#recent-work .project-container .col-md-8 .project-list {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 0;
+}
+#recent-work .project-container .col-md-8 .project-list li {
+  display: none;
+}
+#recent-work .project-container .col-md-8 .project-list li a {
   text-decoration: none;
+}
+#recent-work .project-container .col-md-8 .project-list li a img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.64);
+}
+#recent-work .project-container .col-md-8 .project-list li a .project-title {
+  padding: 2%;
+}
+#recent-work .project-container .col-md-8 .project-list li a .project-title .demo-btn {
+  width: 15%;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+#recent-work .project-container .col-xs-2 {
+  height: 100%;
+}
+#recent-work .project-container .col-xs-2 .arrow-left,
+#recent-work .project-container .col-xs-2 .arrow-right {
+  background: none;
+  border: none;
+}
+#recent-work .project-container .col-xs-2.arrows {
+  font-size: 35px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #about-me {
   width: 100%;
@@ -186,18 +261,11 @@ header.home .home-div .intro-desc-wrapper .web-developer {
 #about-me .background .background-overlay {
   width: inherit;
   height: inherit;
-  background: rgba(68, 108, 179, 0.7);
+  background: rgba(4, 12, 30, 0.7);
 }
-#about-me h3 {
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-  font-weight: 400;
+#about-me h3,
+#about-me h4 {
   text-align: center;
-}
-#about-me .caption {
-  text-align: center;
-  font-size: 20px;
-  padding: 10px;
-  font-family: Lato, cursive;
 }
 #about-me .row {
   padding: 20px 0;
@@ -225,11 +293,8 @@ header.home .home-div .intro-desc-wrapper .web-developer {
   max-height: 214px;
   margin: 0 auto;
 }
-#about-me .skill-chart-div .skill-chart {
-  padding: 4% 4% 4% 8%;
-}
 #about-me .skill-chart-div svg path {
-  stroke-width: 20;
+  stroke-width: 17;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
@@ -258,72 +323,100 @@ header.home .home-div .intro-desc-wrapper .web-developer {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
 }
+#about-me .tools-ul {
+  list-style: none;
+}
+#about-me .tools-ul li {
+  padding: 3% 0;
+  font-size: 15px;
+}
 #contact {
-  background: #4c4c54;
+  width: 100%;
+  height: 80%;
+  background: #E9D460;
 }
-#contact .contactP {
-  background: transparent;
+#contact h2 {
+  margin: 0;
+  padding-top: 60px;
   text-align: center;
-  padding-top: 10%;
-  /*text-transform: uppercase;*/
-  /*font-family: "latienne-pro","chaparral-pro",serif;*/
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 40px;
-  color: rgba(240, 240, 240, 0.85);
-  letter-spacing: 0rem;
-  word-spacing: 0.015rem;
+  color: #376dac;
 }
-#contact .contact-line {
-  width: 60%;
-  margin-left: 20%;
-  opacity: 0.5;
+#contact .caption {
+  margin: 20px 0;
+  color: #376dac;
+}
+#contact .contact-container {
+  background: url("images/mailbox.png") no-repeat 95% 100%;
+  height: 100%;
+}
+#contact .contact-container .contactForm {
+  width: 80%;
+  margin: 4% auto;
+  color: #376dac;
+  overflow-y: scroll;
+}
+#contact .contact-container .contactForm .form-group {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+#contact .contact-container .contactForm .form-group input,
+#contact .contact-container .contactForm .form-group textarea {
+  color: #376dac;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #376dac;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+#contact .contact-container .contactForm .form-group textarea {
+  color: #376dac;
+  min-height: 200px;
+  padding: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #376dac;
 }
-#contact .contact-ul {
-  /*display: inline-block;*/
-  margin-left: 31%;
-  list-style-type: none;
-}
-#contact .contact-email {
-  padding: 20px;
-  width: 30%;
-}
-#contact .contact-email a {
+#contact .contact-container .contactForm .form-group label {
+  color: #376dac;
   position: absolute;
-  color: rgba(240, 240, 240, 0.85);
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-  font-weight: 100;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  font-weight: 300;
+}
+#contact .contact-container .contactForm .form-group .message-lable {
+  top: 20%;
+  padding: 10px;
+}
+#contact .contact-container .contactForm .form-group input:focus + label,
+#contact .contact-container .contactForm .form-group input.has-value + label,
+#contact .contact-container .contactForm .form-group textarea:focus + label,
+#contact .contact-container .contactForm .form-group textarea.has-value + label {
+  top: 0px;
   font-size: 16px;
-  margin-left: 2%;
+}
+#contact .contact-container .contactForm .form-group .sendBtn {
+  float: right;
+  margin-top: 10px;
+  border-radius: 0;
+}
+footer {
+  height: 20%;
+  background: #446CB3;
+  border-top: #fff 1px solid;
+}
+footer .stay-connect {
+  text-align: center;
+}
+footer .stay-connect .icon-mail {
   text-decoration: none;
-  letter-spacing: 0.1rem;
-  /*height: 4%;*/
-  /*letter-spacing: 0rem;*/
-  /*word-spacing:0.015rem;*/
-}
-#contact .contact-email a .icon-mail {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  background: url("images/email-512px.svg") no-repeat;
-  background-size: 24px 24px;
-}
-#contact .contact-email a .icon-git {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  background: url("images/github-squared-512px-2.svg") no-repeat;
-  background-size: 24px 24px;
-}
-#contact .contact-email a .icon_lin {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  background: url("images/linkedin-rect-512px.svg") no-repeat;
-  background-size: 24px 24px;
+  color: #fff;
 }

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Vandana Bhat | Profile</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="media_queries.css">
 
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="nav-bar-top">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom heading-font" id="nav-bar-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -26,11 +27,8 @@
                 <a href="#about-me" class="menu-link"><span>me</span></a>
             </li>
             <!--<li>-->
-                <!--<a href="#skills" class="menu-link"><span>skills</span></a>-->
+                <!--<a href="#recent-work" class="menu-link"><span>projects</span></a>-->
             <!--</li>-->
-            <li>
-                <a href="#recent-work" class="menu-link"><span>projects</span></a>
-            </li>
             <li>
                 <a href="#contact" class="menu-link"><span>contact</span></a>
             </li>
@@ -49,6 +47,11 @@
                     <div class="pic"> </div>
                 </div>
                 <div class="intro-desc-div">
+                    <p class="intro-welcome">
+                        <span id="greeting"></span>
+                        <span id="cursor">|</span>
+                        I am
+                    </p>
                     <h1 class="name">Vandana Bhat</h1><br>
                     <p class="intro-desc">
                         Front-end Developer • UI Developer • UI Designer<br>
@@ -59,8 +62,6 @@
                 </div>
 
             </div>
-            <!--<hr class="line">-->
-            <!--<p class="web-developer">web developer</p>-->
         </div><!--home div-->
     </header>
 
@@ -69,7 +70,7 @@
             <div class="background">
                 <div class="background-overlay"></div>
             </div>
-            <h3><span>Hi</span> There!!</h3>
+            <h3 class="heading-font"><span>Hi</span> There!!</h3>
             <p class="caption"> I'm focused on crafting clean, user-friendly, responsive & pixel perfect web pages.</p>
             <div class="row">
                 <div class="col-lg-6 col-md-6 about-me-desc">
@@ -81,7 +82,7 @@
                     <p>I have a strong thirst for knowledge, enjoy learning about new web front-end technologies and UX Design.</p>
                 </div>
             </div>
-            <h3>Skills</h3>
+            <h3 class="heading-font">Skills</h3>
             <div class="row">
                 <div class="col-md-4 design-skills">
                     <figure class="">
@@ -106,29 +107,43 @@
                 </div>
 
             </div>
-            <h3> Language and Technologies</h3>
+            <h3 class="heading-font"> Language and Technologies</h3>
             <div class="row">
-                <div class="col-lg-6 col-md-6 skill-chart-div">
-                    <svg width="500" height="500" class="skill-chart">
-                        <circle id="creativity"  cx="200" cy="200" r="62" fill="#22313F" />
-                        <path id="html" fill="none" stroke="#AEA8D3" />
-                        <path id="css" fill="none" stroke="#3498db" />
-                        <path id="angularjs" fill="none" stroke="#E4F1FE" />
-                        <path id="jquery" fill="none" stroke="#446CB3" />
-                        <path id="js" fill="none" stroke="rgb(132, 167, 240)" />
-                        <path id="bootstrap" fill="none" stroke="#1F3A93" />
-                        <text id="skillText" x="150" y="205" fill="#fff">Creativity 100%</text>
-                    </svg>
-                </div>
-                <div class="col-lg-6 col-md-6 skills">
+                <div class="col-md-4 skills">
                     <ul>
-                        <li style="background:#E4F1FE">AngularJS 70%</li>
+                        <li style="background:#4183D7">AngularJS 70%</li>
                         <li style="background:#AEA8D3">HTML5 85%</li>
                         <li style="background:rgb(132, 167, 240)">Javascript 80%</li>
                         <li style="background:#3498db">CSS3 75%</li>
                         <li style="background:#446CB3">jQuery 75%</li>
                         <li style="background:#1F3A93">Twitter Bootstrap 90%</li>
                         <li style="background:#22313F">Creativity 100%</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 skill-chart-div">
+                    <div class="text-center">
+                        <svg width="400" height="400" class="skill-chart">
+                            <circle id="creativity"  cx="200" cy="200" r="59" fill="#22313F" />
+                            <path id="html" fill="none" stroke="#AEA8D3" />
+                            <path id="css" fill="none" stroke="#3498db" />
+                            <path id="angularjs" fill="none" stroke="#4183D7" />
+                            <path id="jquery" fill="none" stroke="#446CB3" />
+                            <path id="js" fill="none" stroke="rgb(132, 167, 240)" />
+                            <path id="bootstrap" fill="none" stroke="#1F3A93" />
+                            <text id="skillText" x="150" y="205" fill="#fff">Creativity 100%</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="tools-heading heading-font"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Tools</h4>
+                    <ul class="tools-ul">
+                        <li><strong>Source Control</strong> - GitLab <i class="fa fa-gitlab" aria-hidden="true"></i></li>
+                        <li><strong>Build Tool</strong> - Grunt, npm</li>
+                        <li><strong>Image Editor</strong> - Photoshop & Illustrator</li>
+                        <li><strong>CSS3 </strong>- LESS & SASS</li>
+                        <li><strong>Editors</strong> - WebStorm, Sublime Text, STS and Text Mate</li>
+                        <li><strong>Operating System </strong> - <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -140,37 +155,145 @@
                 <!--</blockquote>-->
 
     </section>
-    <!--<section id="skills">-->
-        <!--<h1>Skills</h1>-->
-    <!--</section>-->
-    <section id="recent-work">
-        <p class="work-P">
-            Coming Soon..<br>
-            Repositories:
-            <a href="https://github.com/vandanabhat?tab=repositories" target="_blank">https://github.com/vandanabhat</a>
-        </p>
+    <section id="recent-work" class="hidden">
+        <div class="container project-container">
+            <h2 class="heading-font">Projects</h2>
+            <!--<img src="images/rain-fall.png" />-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-4"></div>-->
+                <!--<div class="col-md-4" style="padding: 0"> ></div>-->
+                <!--<div class="col-md-4"></div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="col-xs-2 arrows">
+                    <button id="arrow-left-id" class="arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-xs-8 col-md-8">
+                    <ul class="project-list">
+                        <li class="show">
+                            <a href="#">
+                                <img  src="images/bridge.jpg" width="82%" height="90%">
+                                <div class="project-title">
+                                    <h4> Project 1</h4>
+                                    <p>Project Description</p>
+                                    <button class="demo-btn"> Demo </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                               <img  src="images/rain-fall.png" width="82%" height="90%">
+                               <div class="project-title">
+                                   <h4> Project 1</h4>
+                                   <p>Project Description</p>
+                                   <button class="demo-btn"> Demo </button>
+                               </div>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img  src="images/dx-ball.png" width="82%" height="90%">
+                                <div class="project-title">
+                                    <h4> Project 1</h4>
+                                    <p>Project Description</p>
+                                    <button class="demo-btn"> Demo </button>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img  src="images/flames.png" width="82%" height="90%">
+                                <div class="project-title">
+                                    <h4> Project 1</h4>
+                                    <p>Project Description</p>
+                                    <button class="demo-btn"> Demo </button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2 arrows">
+                    <button id="arrow-right-id" class="arrow-right"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <!--<p class="work-P">-->
+            <!--Coming Soon..<br>-->
+            <!--Repositories:-->
+            <!--<a href="https://github.com/vandanabhat?tab=repositories" target="_blank">https://github.com/vandanabhat</a>-->
+        <!--</p>-->
     </section>
 
     <section id="contact">
-        <p class="contactP">
-            Contact
-        </p>
-        <hr class="contact-line">
-        <ul class="contact-ul">
-            <li class="contact-email">
-                <a href="" target="_blank"><span class="icon-mail"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp vandanak.bhat@gmail.com</a>
-            </li>
-            <li class="contact-email">
-                <a href="https://github.com/vandanabhat?tab=repositories" target="_blank"><span class="icon-git"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp https://github.com/vandanabhat</a>
-            </li>
-            <li class="contact-email">
-                <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"><span class="icon_lin"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp https://www.linkedin.com/VandanaBhat</a>
-            </li>
-        </ul>
-        <br>
-        <hr class="contact-line">
+        <div class="contact-container">
+            <h2 class="heading-font">
+                Contact
+            </h2>
+            <p class="caption">Say Hello!! I would love to hear from you.</p>
+            <div class="row contactForm" id="contact-form-Id">
+                <div class="col-md-12">
+                    <form name="sendEmailForm">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" required>
+                                    <label for="name">Your Name(*)</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="company" id="company" class="form-control">
+                                    <label for="company">Company</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" name="phone" id="phone" class="form-control">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" required>
+                                    <label for="email">Email(*)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                    <label for="message" class="message-lable">Message</label>
+                                    <button type="submit" value="Send" class="btn btn-default btn-primary sendBtn" onclick="sendEmail()"> Send</button>
+                                    <p style="padding-top:10px;color: #376dac"> * required field</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--<footer>-->
+            <!--<div class="stay-connect">-->
+                <!--<h3> Stay Connected</h3>-->
+                <!--<div>-->
+                    <!--<a href="https://github.com/vandanabhat?tab=repositories" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>-->
+                    <!--<a href="https://www.linkedin.com/in/vandanakbhat" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>-->
+                    <!--<br>-->
+                    <!--<a href="#" target="_blank" class="icon-mail">vandanak.bhat@gmail.com</a>-->
+
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</footer>-->
     </section>
-    <footer></footer>
+    <footer>
+
+        <div class="stay-connect">
+            <h3> Stay Connected</h3>
+            <div>
+                <a href="https://github.com/vandanabhat?tab=repositories" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/vandanakbhat" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <br>
+                <a href="#" target="_blank" class="icon-mail">vandanak.bhat@gmail.com</a>
+
+
+            </div>
+        </div>
+    </footer>
 <script src="lib/jquery-3.1.0.min.js"></script>
 <!--<script src="lib/jquery.color-2.1.0.min.js"></script>-->
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
