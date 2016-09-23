@@ -4,6 +4,7 @@
 }
 * {
   color: #fff;
+  letter-spacing: 1px;
 }
 html,
 body,
@@ -369,6 +370,13 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   color: #376dac;
   overflow-y: scroll;
 }
+#contact .contact-container .contactForm #responseText {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: green;
+  width: 100%;
+}
 #contact .contact-container .contactForm .col-md-4 {
   padding-top: 10px;
 }
@@ -424,6 +432,11 @@ header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
   float: right;
   margin-top: 10px;
   border-radius: 0;
+}
+#contact .contact-container .contactForm .form-group .has-error {
+  color: rgba(202, 0, 0, 0.69);
+  top: 0px;
+  display: none;
 }
 footer {
   height: 20%;

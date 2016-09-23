@@ -115,41 +115,79 @@ $(document).ready(function () {
         }
     });
 
-    var greetArr = ['',"Hello,","नमस्ते,",'ನಮಸ್ಕಾರ,'],
-        cursor = $('#cursor'),
-        greeting = $('#greeting'),
-        counter = 500,
-        len = greetArr.length,
-        i=0,
-        intervalId;
+    $('.contactFormClass').on('keyup','.requiredClass',function () {
+        $(this).siblings('.has-error').hide();
+    });
+    $('.sendBtn').on('click',function (event) {
+        var valid = true,
+            data = {};
+        event.stopPropagation();
+        event.preventDefault();
+        $('.contactFormClass input, textarea').each(function () {
+            var $this = $(this);
+            if ( !$this.val() && $this.hasClass('requiredClass') ) {
+                $this.siblings('.has-error').show();
+                valid = false;
+            }else if($this.attr('name') == 'email'){
+                var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+                valid = pattern.test($this.val());
+                if(!valid){
+                    $this.siblings('.has-error').show();
+                }else {
+                    data[$this.attr('name')] = $this.val();
+                }
+            }else{
+                data[$this.attr('name')] = $this.val();
+            }
+        });
+        if(valid){
+            $.ajax({
+                url: "https://formspree.io/vandanak.bhat@gmail.com",
+                method: "POST",
+                data: data,
+                dataType: "json"
+        }).then( function success(rsp) {
+                $('.contactFormClass input, textarea').each(function () {
+                    $(this).val("");
+                })
+                $('#responseText').text("Thank you!! I will get back to you.");
+            }, function fail(err) {
+                $('#responseText').css('color','red').text("Please try AGAIN!!")
+            });
+        }
+    });
 
-    var changeGreetingText = function(text,j){
-        var text = text;
-        var index= j;
-        setTimeout( function () {
-            $(greeting).text($(greeting).text() + text);
-        },1000 + index * 100);
+    function spinWelcomeText() {
+        var greetArr = ['',"Hello,","नमस्ते,",'ನಮಸ್ಕಾರ,'],
+            cursor = $('#cursor'),
+            greeting = $('#greeting'),
+            counter = 500,
+            len = greetArr.length,
+            i=0,
+            intervalId;
 
-    };
-    setInterval(function () {
-        i = i >= len-1 ? 0 : i+1;
-        $(greeting).text('');
-        var subArr = greetArr[i].split('');
+        var changeGreetingText = function(text,j){
+            var text = text;
+            var index= j;
+            setTimeout( function () {
+                $(greeting).text($(greeting).text() + text);
+            },1000 + index * 100);
+
+        };
+        setInterval(function () {
+            i = i >= len-1 ? 0 : i+1;
+            $(greeting).text('');
+            var subArr = greetArr[i].split('');
             for (var j=0;j<subArr.length;j++){
                 changeGreetingText(subArr[j],j);
             }
-    }, (greetArr[i].length+1)*1000+2000);
+        }, (greetArr[i].length+1)*1000+2000);
 
-    setInterval(function () {
-        $(cursor).text( $(cursor).text() == '' ? "|":'' );
-    },1000);
-
+        setInterval(function () {
+            $(cursor).text( $(cursor).text() == '' ? "|":'' );
+        },1000);
+    }
+    spinWelcomeText();
 })
-function sendEmail() {
-    $.ajax({
-        url: "https://formspree.io/vandanak.bhat@gmail.com",
-        method: "POST",
-        data: {message: "hello!",email:"test@gmail.com"},
-        dataType: "json"
-    });
-}
+
+

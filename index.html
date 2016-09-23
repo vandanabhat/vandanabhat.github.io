@@ -257,12 +257,13 @@
             <p class="caption">Say Hello!! I would love to hear from you.</p>
             <div class="row contactForm" id="contact-form-Id">
                 <div class="col-md-12">
-                    <form name="sendEmailForm">
+                    <form name="sendEmailForm" class="contactFormClass" novalidate>
                         <div class="row">
                             <div class="col-md-4 col-md-offset-2">
                                 <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control" required>
+                                    <input type="text" name="name" id="name" class="form-control requiredClass">
                                     <label for="name">Your Name(*)</label>
+                                    <span class="has-error">Please enter you Name</span>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="company" id="company" class="form-control">
@@ -273,48 +274,28 @@
                                     <label for="phone">Phone</label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" required>
+                                    <input type="email" name="email" id="email" class="form-control requiredClass">
                                     <label for="email">Email(*)</label>
+                                    <span class="has-error">Please enter valid email address</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                    <textarea name="message" id="message" class="form-control requiredClass"></textarea>
                                     <label for="message" class="message-lable">Message</label>
-                                    <button type="submit" value="Send" class="btn btn-default btn-primary sendBtn" onclick="sendEmail()"> Send</button>
+                                    <span class="has-error">Please enter a message</span>
+                                    <button type="submit" value="Send" class="btn btn-default btn-primary sendBtn"> Send</button>
                                     <p style="padding-top:10px;color: #376dac"> * required field</p>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <label id="responseText"></label>
                 </div>
             </div>
-            <!--<footer>-->
-                <!--<div class="stay-connect">-->
-                    <!--<h3> Stay Connected</h3>-->
-                    <!--<div>-->
-                        <!--<a href="https://github.com/vandanabhat?tab=repositories" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>-->
-                        <!--<a href="https://www.linkedin.com/in/vandanakbhat" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>-->
-                        <!--<br>-->
-                        <!--<a href="#" target="_blank" class="icon-mail">vandanak.bhat@gmail.com</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</footer>-->
         </div>
-        <!--<footer>-->
-            <!--<div class="stay-connect">-->
-                <!--<h3> Stay Connected</h3>-->
-                <!--<div>-->
-                    <!--<a href="https://github.com/vandanabhat?tab=repositories" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>-->
-                    <!--<a href="https://www.linkedin.com/in/vandanakbhat" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>-->
-                    <!--<br>-->
-                    <!--<a href="#" target="_blank" class="icon-mail">vandanak.bhat@gmail.com</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</footer>-->
     </section>
     <footer>
-
         <div class="stay-connect">
             <h3> Stay Connected</h3>
             <div>
@@ -322,8 +303,6 @@
                 <a href="https://www.linkedin.com/in/vandanakbhat" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
                 <br>
                 <a href="#" target="_blank" class="icon-mail">vandanak.bhat@gmail.com</a>
-
-
             </div>
         </div>
     </footer>
